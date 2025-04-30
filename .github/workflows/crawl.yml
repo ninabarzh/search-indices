@@ -1,0 +1,28 @@
+name: Update Indices
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Daily at midnight
+  workflow_dispatch:       # Manual trigger
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 pyyaml pdfplumber
+      - name: Run crawler
+        run: |
+          python crawler/crawl.py
+      - name: Commit changes
+        run: |
+          git config --global ninabarzh "GitHub Actions"
+          git config --global nina@tymyrddin.space "actions@github.com"
+          git add docs/indices/
+          git commit -m "Update indices [skip ci]" || echo "No changes"
+          git push
