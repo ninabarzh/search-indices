@@ -1,8 +1,8 @@
 name: Update Indices
 on:
   schedule:
-    - cron: "0 0 * * *"  # Daily at midnight
-  workflow_dispatch:       # Manual trigger
+    - cron: "0 0 * * 0"     # Weekly at midnight
+  workflow_dispatch:        # Manual trigger
 
 jobs:
   crawl:
@@ -23,6 +23,6 @@ jobs:
         run: |
           git config --global ninabarzh "GitHub Actions"
           git config --global nina@tymyrddin.space "actions@github.com"
-          git add docs/indices/
+          git add docs/indices/*
           git commit -m "Update indices [skip ci]" || echo "No changes"
           git push
