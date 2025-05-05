@@ -18,7 +18,7 @@ jobs:
           pip install requests beautifulsoup4 pyyaml pdfplumber
       - name: Run crawler
         run: |
-          python crawler/crawl.py
+          python crawler/crawler.py
       - name: Commit changes
         run: |
           git config --global ninabarzh "GitHub Actions"
