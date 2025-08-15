@@ -1,61 +1,42 @@
 {
-    "domains": {
-        "red_in": [
-            "recon.tymyrddin.dev",
-            "enum.tymyrddin.dev",
-            "iac.tymyrddin.dev",
-            "physical.tymyrddin.dev",
-            "webapp.tymyrddin.dev",
-            "api.tymyrddin.dev",
-            "cloud.tymyrddin.dev",
-            "network.tymyrddin.dev",
-            "iot.tymyrddin.dev"
+    "sites": {
+        "sphinx": [
+            "red.tymyrddin.dev",
+            "blue.tymyrddin.dev",
+            "green.tymyrddin.dev",
+            "purple.tymyrddin.dev"
         ],
-        "red_through": [
-            "exploitation.tymyrddin.dev",
-            "steganography.tymyrddin.dev",
-            "evasion.tymyrddin.dev",
-            "cryptanalysis.tymyrddin.dev",
-            "reverse.tymyrddin.dev",
-            "bof.tymyrddin.dev",
-            "fire.tymyrddin.dev",
-            "ad.tymyrddin.dev"
-        ],
-        "red_out": [
-            "exfil.tymyrddin.dev",
-            "bbh.tymyrddin.dev"
-        ],
-        "blue_soc": [
-            "nta.tymyrddin.dev",
-            "edr.tymyrddin.dev",
-            "siem.tymyrddin.dev",
-            "dfir.tymyrddin.dev"
-        ],
-        "blue_home": [
-            "pap.tymyrddin.dev",
-            "macos.tymyrddin.dev",
-            "windows.tymyrddin.dev",
-            "linux.tymyrddin.dev",
-            "android.tymyrddin.dev",
-            "ios.tymyrddin.dev",
-            "server.tymyrddin.dev",
-            "nm.tymyrddin.dev",
-            "webserver.tymyrddin.dev",
-            "mailserver.tymyrddin.dev",
-            "honey.tymyrddin.dev"
-        ],
-        "blue_dev": [
-            "appsec.tymyrddin.dev",
-            "devsecops.tymyrddin.dev"
-        ],
-        "green": [
-            "pii.tymyrddin.dev",
-            "green.tymyrddin.dev"
-        ],
-        "main": [
+        "flask": [
             "tymyrddin.dev",
             "wyrd.tymyrddin.dev",
             "uu.tymyrddin.dev"
+        ]
+    },
+    "repositories": {
+        "users": [
+            "https://github.com/ninabarzh",
+            "https://github.com/tymyrddin",
+            "https://gitlab.com/tymyrddin"
+        ],
+        "individual_repos": [
+            "https://github.com/ninabarzh/site-crawler-framework",
+            "https://github.com/ninabarzh/security-wazuh-monitor",
+            "https://github.com/ninabarzh/fastapi-tdd-docker",
+            "https://github.com/ninabarzh/pers",
+            "https://github.com/tymyrddin/scripts-classical-ciphers",
+            "https://github.com/tymyrddin/ipa-siem-stack",
+            "https://github.com/tymyrddin/scripts-network",
+            "https://github.com/tymyrddin/codes-edr",
+            "https://github.com/tymyrddin/codes-reverse",
+            "https://github.com/tymyrddin/red-iac",
+            "https://github.com/tymyrddin/codes-bof",
+            "https://github.com/tymyrddin/codes-exploits",
+            "https://gitlab.com/tymyrddin/data-analysis",
+            "https://gitlab.com/tymyrddin/data-visualisation",
+            "https://gitlab.com/tymyrddin/data-wrangling",
+            "https://gitlab.com/tymyrddin/deep-learning",
+            "https://gitlab.com/tymyrddin/ml",
+            "https://gitlab.com/tymyrddin/nlp"
         ]
     },
     "settings": {
